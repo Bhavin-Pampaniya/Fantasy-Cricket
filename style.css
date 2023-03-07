@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+button{
+    color: black;
+}
+
+body {
+    background-color: rgb(6, 6, 42)
+}
+
+main {
+    width: 80vw;
+    margin: 1rem auto;
+    background-color: rgba(59, 11, 104, 0.11);
+    /* height: 85vh; */
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.title {
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 7px 5px rgba(255, 255, 255, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.playerTeamName {
+    width: 80%;
+    height: 40%;
+    /* background-color: black; */
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    margin: auto;
+    align-items: center;
+}
+
+.playerTeamName div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.174);
+    border-radius: 1rem;
+    padding: .5rem 0;
+    height: 80%;
+    text-align: center;
+}
+
+
+
+.playerTeamName input {
+    width: 50%;
+    background-color: rgba(128, 128, 128, 0.146);
+    outline: none;
+    border: 1px solid rgb(3, 3, 72);
+    border-radius: 2rem;
+    padding: .7rem 0;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.teamNameBtn {
+    height: 20%;
+    width: 10%;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    padding: .5rem .3rem;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.331);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(253, 251, 251, 0.3) 0px 8px 16px -8px;
+}
+
+.teamNameBtn:hover {
+    background-color: rgba(0, 0, 255, 0.717);
+    transition: .3s ease-in-out;
+}
+.tossResult{
+    margin: 2rem 0;
+    text-align: center;
+}
+.playerTeamName input:focus {
+    border: 1px solid white;
+    transition: .3s ease-in-out;
+}
+
+.toss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tossBtn{
+    color: black;
+    background-color: rgba(0, 128, 0, 0.458);
+    padding: .7rem 1rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: .5rem 0;
+}
+.tossBtn:hover{
+    background-color: rgba(0, 128, 0, 0.689);
+    transition: .3s ease-in-out;
+}
+.choosePlayers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    height: 100%;
+}
+.choosePlayers .part1{
+    margin: 1.5rem 0;
+}
+.playersList{
+    padding: .5rem 1rem;
+    background-color: #1400cd3a;
+    border-radius: 2rem 0rem 0 2rem;
+    height: 22rem;
+    width: 60%;
+    overflow-y: auto;
+    box-shadow: rgba(220, 224, 237, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;   
+}
+.playersList::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #000000;
+}
+
+.playersList::-webkit-scrollbar
+{
+	width: 5px;
+    border-radius: 1rem;
+	background-color: #F5F5F5;
+}
+
+.playersList::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #c1c0c2;
+}
+
+.player{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem;
+    gap: .5rem;
+}
+.player button{
+    padding: .2rem;
+    border-radius: .3rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.player button:hover{
+    background-color:rgba(0, 128, 0, 0.669);
+    color: white;
+    transition: .3s ease-in-out;
+}
